@@ -36,6 +36,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginStart="19dp"
                 android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimary"
                 android:text=" ¿Consumes frutas y verduras producidas en tu region.?"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
