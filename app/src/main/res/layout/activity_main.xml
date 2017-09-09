@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zelada.huellaecologicafin.MainActivity">
+
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/layaut1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/preg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="30dp"
+                android:text=" ¿Consumes frutas y verduras producidas en tu region.?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/rgpreg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preg1"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si y prefiero las que vienen sin envasar" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Si, aunque a veces las compro envasadas"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="117dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No, compro prouctos de otras regiones que, en muchas ocaciones, estan envasados." />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/preg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg1"
+                android:layout_alignStart="@+id/preg1"
+                android:layout_below="@+id/radioGroup2"
+                android:layout_marginTop="20dp"
+                android:text="2. ¿Que haces con los restos de comida que sobran?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Los tiro directamente a la basura." />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Procuro aprovecharlos." />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/preg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg2"
+                android:layout_alignStart="@+id/preg2"
+                android:layout_below="@+id/radioGroup3"
+                android:layout_marginTop="20dp"
+                android:text="3. ¿Que transporte utilizas para tus actividades diarias.?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Transporte publico." />
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voy en bici o caminando." />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uso el coche." />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/preg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg3"
+                android:layout_alignStart="@+id/preg3"
+                android:layout_below="@+id/radioGroup4"
+                android:layout_marginTop="20dp"
+                android:text="4. Cuando usas la lavadora."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Espero a tener suficiente ropa para llenarla." />
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lapongo en cuanto la necesito sin importar la cantidad." />
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Espero a tener la suficiente ropa y compre un modelo ahorrador." />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/preg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg4"
+                android:layout_alignStart="@+id/preg4"
+                android:layout_below="@+id/radioGroup5"
+                android:layout_marginTop="20dp"
+                android:text="5. ¿Que tipo de calentador utilizas?."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Solar." />
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gas." />
+
+               </RadioGroup>
+
+            <TextView
+                android:id="@+id/preg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg5"
+                android:layout_alignStart="@+id/preg5"
+                android:layout_below="@+id/radioGroup6"
+                android:layout_marginTop="20dp"
+                android:text="6. Cuandono no estas usando aparatos electronicos, ¿los desconectas?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Casi siempre." />
+
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nunca." />
+
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Algunas veces." />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/preg7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg6"
+                android:layout_alignStart="@+id/preg6"
+                android:layout_below="@+id/radioGroup7"
+                android:layout_marginTop="20dp"
+                android:text="7. ¿Que haces con los reciduos que produces en tu en tu hogar?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Los pongo en unico bote." />
+
+                <RadioButton
+                    android:id="@+id/radioButton18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Los trato de reutilizar o los separo y los comprimo." />
+
+               </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/preg8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg7"
+                android:layout_alignStart="@+id/preg7"
+                android:layout_below="@+id/radioGroup8"
+                android:layout_marginTop="20dp"
+                android:text="8. Cuando lavas los trastes."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Abres la llave solo para enjuagar." />
+
+                <RadioButton
+                    android:id="@+id/radioButton20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mantienes la llave abierta mientras los enjabonas." />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/preg9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/preg8"
+                android:layout_alignStart="@+id/preg8"
+                android:layout_below="@+id/radioGroup9"
+                android:layout_marginTop="20dp"
+                android:text="9. ¿Cuanto te tardas en bañarte?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Menos e cinco minutos." />
+
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entre 5 y 10 minutos." />
+
+                <RadioButton
+                    android:id="@+id/radioButton23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mas de 10 minutos." />
+            </RadioGroup>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/buttonE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EVALUAR"
+                        android:onClick="evaluar"
+                        tools:layout_editor_absoluteX="-50dp"
+                        tools:layout_marginLeft="100dp"
+                        app:backgroundTint="@color/colorPrimaryDark"
+
+                        android:textColor="@android:color/widget_edittext_dark"
+                        android:shadowColor="@color/colorPrimary"/>
+                    <Button
+                        android:id="@+id/buttonR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REINICIAR"
+                        android:onClick="reiniciar"
+                        tools:layout_editor_absoluteX="-50dp"
+                        tools:layout_editor_absoluteY="332dp"
+                        android:textColor="@android:color/widget_edittext_dark"
+                        android:shadowColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.44"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+</FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
